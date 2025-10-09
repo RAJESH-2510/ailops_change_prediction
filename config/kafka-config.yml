@@ -1,0 +1,15 @@
+topics:
+  - name: deployment-metrics
+    partitions: 10
+    replication-factor: 1
+    retention-ms: 86400000
+
+  - name: application-logs
+    partitions: 20
+    replication-factor: 1
+    retention-ms: 604800000
+
+consumers:
+  - group-id: ml-prediction-engine
+    auto-offset-reset: latest
+    max-poll-records: 1000

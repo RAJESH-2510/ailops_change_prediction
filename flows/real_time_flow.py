@@ -1,3 +1,8 @@
+import sys
+import os
+
+# Add the project root to sys.path
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from prefect import flow
 from src.pipeline import AIOpsPipeline
 from src.features import FeatureEngineering

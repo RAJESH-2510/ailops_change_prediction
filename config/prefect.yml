@@ -1,0 +1,15 @@
+deployments:
+  - name: main-deployment
+    flow_name: Change Failure Prediction Pipeline
+    schedule:
+      interval: 300 # 5 minutes
+
+  - name: retraining-deployment
+    flow_name: Model Retraining Flow
+    schedule:
+      cron: "0 0 * * 0" # Weekly
+
+  - name: realtime-deployment
+    flow_name: Real-Time Inference Flow
+    schedule:
+      interval: 60 # Every minute
