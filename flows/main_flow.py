@@ -3,7 +3,9 @@ import os
 
 # Add the project root to sys.path
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
 from prefect import flow, task
+from prefect.cache_policies import NO_CACHE
 from src.pipeline import AIOpsPipeline
 from src.features import FeatureEngineering
 from src.ml_models import EnhancedTrainingPipeline, RealTimeInference
@@ -14,10 +16,17 @@ import pandas as pd
 import random
 import joblib
 
+
+# Disable caching for this task since AIOpsPipeline has a Kafka Consumer (non-serializable)
+@task(log_prints=True, cache_policy=NO_CACHE)
+def ingest_data_task(topic: str):
+    pipeline = AIOpsPipeline()
+    return pipeline.ingest_data(topic=topic)
+
+
 @flow(name="Change Failure Prediction Pipeline", log_prints=True)
 def main_flow():
-    pipeline = AIOpsPipeline()
-    ingested = pipeline.ingest_data(topic='deployment-metrics')
+    ingested = ingest_data_task(topic='deployment-metrics')
 
     if ingested is None:
         return {"status": "No new data"}
@@ -50,6 +59,7 @@ def main_flow():
         'cicd': cicd_result,
         'performance': performance
     }
+
 
 if __name__ == "__main__":
     main_flow()

@@ -1,0 +1,21 @@
+name: change-failure-prediction
+prefect-version: 3.4.23
+
+deployments:
+  - name: main-flow-deployment
+    entrypoint: flows/main_flow.py:main_flow
+    work_pool:
+      name: default-agent-pool
+    description: Main Change Failure Prediction pipeline flow
+
+  - name: retraining-flow-deployment
+    entrypoint: flows/retraining_flow.py:retraining_flow
+    work_pool:
+      name: default-agent-pool
+    description: Model retraining and evaluation pipeline
+
+  - name: realtime-flow-deployment
+    entrypoint: flows/real_time_flow.py:real_time_flow
+    work_pool:
+      name: default-agent-pool
+    description: Real-time inference and monitoring pipeline
