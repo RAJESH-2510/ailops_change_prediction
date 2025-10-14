@@ -9,7 +9,7 @@ from prefect import flow, task, get_run_logger
 # Add parent directory to path for imports
 sys.path.append(str(Path(__file__).resolve().parent.parent))
 
-# Set model directory
+# Paths to models
 MODEL_DIR = Path(__file__).resolve().parent.parent / 'models'
 RF_MODEL_PATH = MODEL_DIR / 'rf_model.joblib'
 SCALER_PATH = MODEL_DIR / 'scaler.joblib'
@@ -18,8 +18,9 @@ from src.pipeline import AIOpsPipeline
 from src.features import FeatureEngineering
 from src.ml_models import RealTimeInference
 from src.dashboard import AIOpsDashboard
+
+# Import CICD task wrappers
 from src.cicd import CICDIntegration
-from src.continuous_improvement import ContinuousImprovement
 
 # -----------------------------
 # Tasks
@@ -28,9 +29,9 @@ from src.continuous_improvement import ContinuousImprovement
 @task(log_prints=True)
 def ingest_data_task(topic: str) -> List[Dict[str, Any]]:
     pipeline = AIOpsPipeline()
-    records = pipeline.ingest_data(topic=topic, timeout=10, max_records=10)
+    records = pipeline.ingest_data(topic=topic, timeout=10, max_records=50)
     pipeline.close()
-    return records or []  # Ensure it returns a list
+    return records or []
 
 @task(log_prints=True)
 def feature_engineering_task(raw_data: Dict[str, Any]) -> pd.DataFrame:
@@ -49,17 +50,25 @@ def model_inference_task(raw_data: Dict[str, Any]) -> Dict[str, Any]:
     return inference.predict_with_explanation(deployment_data=raw_data)
 
 @task(log_prints=True)
-def dashboard_task() -> Dict[str, Any]:
+def dashboard_task(real_time_metrics: Dict[str, Any]) -> Dict[str, Any]:
     dashboard = AIOpsDashboard()
-    return dashboard.generate_dashboard_data()
+    return dashboard.generate_dashboard_data(real_time_metrics=real_time_metrics)
+
+# CICD tasks wrapping CICDIntegration methods
 
 @task(log_prints=True)
-def cicd_task(prediction: Dict[str, Any], raw_data: Dict[str, Any]) -> Any:
-    cicd = CICDIntegration(prediction)
-    return cicd.jenkins_plugin(raw_data=raw_data)
+def run_jenkins_plugin_task(predictor, build_data):
+    cicd = CICDIntegration(predictor)
+    return cicd.jenkins_plugin(build_data)
+
+@task(log_prints=True)
+def push_metrics_task(deployment_data):
+    dashboard = AIOpsDashboard()
+    return dashboard.generate_dashboard_data(deployment_data)
 
 @task(log_prints=True)
 def ci_task(prediction: Dict[str, Any], raw_data: Dict[str, Any]) -> Any:
+    from src.continuous_improvement import ContinuousImprovement
     ci = ContinuousImprovement()
     actual_outcome = raw_data.get('failure_label', False)
     ci.collect_feedback(prediction, actual_outcome)
@@ -73,7 +82,15 @@ def ci_task(prediction: Dict[str, Any], raw_data: Dict[str, Any]) -> Any:
 def main_flow() -> Dict[str, Any]:
     logger = get_run_logger()
 
-    # Step 1: Ingest data (list of records)
+    # Load models once
+    if not RF_MODEL_PATH.exists() or not SCALER_PATH.exists():
+        logger.error(f"Model files not found at {RF_MODEL_PATH} or {SCALER_PATH}")
+        return {"status": "Model files missing"}
+
+    classifier = joblib.load(RF_MODEL_PATH)
+    scaler = joblib.load(SCALER_PATH)
+    predictor = RealTimeInference(classifier, scaler)
+
     ingested_records = ingest_data_task(topic='deployment-metrics')
 
     if not ingested_records:
@@ -91,19 +108,31 @@ def main_flow() -> Dict[str, Any]:
 
             logger.info(f"Processing deployment: {raw_data.get('deployment_id')}")
 
-            # Step 2: Feature engineering
+            # Feature engineering
             features_df = feature_engineering_task(raw_data=raw_data)
 
-            # Step 3: Model inference
+            # Model inference
             prediction = model_inference_task(raw_data=raw_data)
 
-            # Step 4: Dashboard generation
-            dashboard_data = dashboard_task()
+            # Prepare metrics for dashboard
+            real_time_metrics = {
+                'current_risk_score': raw_data.get('risk_score', 0),
+                'active_deployments': 1,  # Could be dynamic if you track it
+                'predictions_last_hour': 10,  # Placeholder, implement as needed
+                'prevented_failures': 0,  # Placeholder, implement as needed
+                'system_health': 'GOOD'  # Could come from monitoring logic
+            }
 
-            # Step 5: CI/CD integration
-            cicd_result = cicd_task(prediction=prediction, raw_data=raw_data)
+            # Dashboard update
+            dashboard_data = dashboard_task(real_time_metrics=real_time_metrics)
 
-            # Step 6: Continuous improvement
+            # CICD integration - use wrapped tasks with predictor object
+            cicd_result = run_jenkins_plugin_task(predictor, raw_data)
+
+            # Push metrics to dashboard from CICD (optional, here dashboard_task already does)
+            push_metrics_task(raw_data)
+
+            # Continuous improvement
             performance = ci_task(prediction=prediction, raw_data=raw_data)
 
             results.append({
@@ -120,6 +149,7 @@ def main_flow() -> Dict[str, Any]:
 
     logger.info(f"✅ Processed {len(results)} deployment(s)")
     return {"results": results}
+
 
 if __name__ == "__main__":
     main_flow()
