@@ -2,10 +2,10 @@ from prefect import task
 from datetime import datetime
 import pandas as pd
 
-
 class FeatureEngineering:
+    @staticmethod
     @task(log_prints=True)
-    def create_deployment_features(self, raw_data):
+    def create_deployment_features(raw_data):
         features = {
             'lines_changed': raw_data.get('lines_changed', 0),
             'total_lines': raw_data.get('total_lines', 1),
@@ -17,12 +17,13 @@ class FeatureEngineering:
             'test_coverage': raw_data.get('test_coverage', 70),
             'build_duration_sec': raw_data.get('build_duration_sec', 180)
         }
-        return features
+        # Return as a single-row DataFrame for ML pipelines
+        return pd.DataFrame([features])
 
 
 class FeatureStore:
     def __init__(self):
-        self.features = {}
+        self.features = {}  # Store computed features if needed
         self.feature_metadata = {}
 
     @task(log_prints=True)
@@ -37,6 +38,7 @@ class FeatureStore:
 
     @task(log_prints=True)
     def compute_feature_importance(self):
+        # Static importance example; replace with ML-driven importance later
         return {
             'code_churn_ratio': 0.25,
             'test_coverage': 0.20,

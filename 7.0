@@ -1,0 +1,41 @@
+============================= test session starts =============================
+platform win32 -- Python 3.12.5, pytest-8.4.2, pluggy-1.6.0
+rootdir: C:\Users\rajesh\change_failure_predicton
+plugins: anyio-4.11.0
+collected 1 item
+
+tests\test_pipeline.py F                                                 [100%]
+
+================================== FAILURES ===================================
+______________________________ test_ingest_data _______________________________
+
+pipeline = <src.pipeline.AIOpsPipeline object at 0x000001A9033F3110>
+
+    def test_ingest_data(pipeline):
+        sample_data = {'deployment_id': 'build123', 'lines_changed': 450}
+>       result = pipeline.ingest_data('metrics', sample_data)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_pipeline.py:10: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <src.pipeline.AIOpsPipeline object at 0x000001A9033F3110>
+topic = 'metrics', timeout = {'deployment_id': 'build123', 'lines_changed': 450}
+
+    def ingest_data(self, topic='deployment-metrics', timeout=5):
+        """
+        Poll Kafka for messages for up to `timeout` seconds.
+        Returns the first message received or None if timeout.
+        """
+        self.consumer.subscribe([topic])
+        elapsed = 0
+        interval = 1  # poll interval in seconds
+    
+>       while elapsed < timeout:
+              ^^^^^^^^^^^^^^^^^
+E       TypeError: '<' not supported between instances of 'int' and 'dict'
+
+src\pipeline.py:24: TypeError
+=========================== short test summary info ===========================
+FAILED tests/test_pipeline.py::test_ingest_data - TypeError: '<' not supporte...
+============================== 1 failed in 0.28s ==============================

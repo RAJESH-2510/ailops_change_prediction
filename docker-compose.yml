@@ -1,14 +1,24 @@
+version: '3.8'
+
 services:
+  # -----------------------------
+  # Zookeeper for Kafka
+  # -----------------------------
   zookeeper:
     image: confluentinc/cp-zookeeper:7.0.1
+    container_name: zookeeper
     ports:
       - "2181:2181"
     environment:
       ZOOKEEPER_CLIENT_PORT: 2181
       ZOOKEEPER_TICK_TIME: 2000
 
+  # -----------------------------
+  # Kafka Broker
+  # -----------------------------
   kafka:
     image: confluentinc/cp-kafka:7.0.1
+    container_name: kafka
     depends_on:
       - zookeeper
     ports:
@@ -21,22 +31,48 @@ services:
       KAFKA_INTER_BROKER_LISTENER_NAME: PLAINTEXT
       KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
 
+  # -----------------------------
+  # Prometheus
+  # -----------------------------
   prometheus:
-    image: prom/prometheus
+    image: prom/prometheus:latest
+    container_name: prometheus
     ports:
       - "9090:9090"
     volumes:
       - ./config/prometheus.yml:/etc/prometheus/prometheus.yml
+    depends_on:
+      - pushgateway
 
+  # -----------------------------
+  # Prometheus Pushgateway
+  # -----------------------------
+  pushgateway:
+    image: prom/pushgateway:latest
+    container_name: pushgateway
+    ports:
+      - "9091:9091"
+
+  # -----------------------------
+  # Grafana
+  # -----------------------------
   grafana:
-    image: grafana/grafana
+    image: grafana/grafana:latest
+    container_name: grafana
     ports:
       - "3000:3000"
     environment:
+      - GF_SECURITY_ADMIN_USER=admin
       - GF_SECURITY_ADMIN_PASSWORD=admin
+    depends_on:
+      - prometheus
 
+  # -----------------------------
+  # Prefect Server
+  # -----------------------------
   prefect-server:
     image: prefecthq/prefect:3-latest
+    container_name: prefect-server
     command: prefect server start --host 0.0.0.0 --port 4200
     ports:
       - "4200:4200"

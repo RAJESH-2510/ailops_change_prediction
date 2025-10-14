@@ -1,65 +1,125 @@
 import sys
-import os
+from pathlib import Path
+from typing import Dict, Any, List
 
-# Add the project root to sys.path
-sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+import pandas as pd
+import joblib
+from prefect import flow, task, get_run_logger
 
-from prefect import flow, task
-from prefect.cache_policies import NO_CACHE
+# Add parent directory to path for imports
+sys.path.append(str(Path(__file__).resolve().parent.parent))
+
+# Set model directory
+MODEL_DIR = Path(__file__).resolve().parent.parent / 'models'
+RF_MODEL_PATH = MODEL_DIR / 'rf_model.joblib'
+SCALER_PATH = MODEL_DIR / 'scaler.joblib'
+
 from src.pipeline import AIOpsPipeline
 from src.features import FeatureEngineering
-from src.ml_models import EnhancedTrainingPipeline, RealTimeInference
+from src.ml_models import RealTimeInference
 from src.dashboard import AIOpsDashboard
 from src.cicd import CICDIntegration
 from src.continuous_improvement import ContinuousImprovement
-import pandas as pd
-import random
-import joblib
 
+# -----------------------------
+# Tasks
+# -----------------------------
 
-# Disable caching for this task since AIOpsPipeline has a Kafka Consumer (non-serializable)
-@task(log_prints=True, cache_policy=NO_CACHE)
-def ingest_data_task(topic: str):
+@task(log_prints=True)
+def ingest_data_task(topic: str) -> List[Dict[str, Any]]:
     pipeline = AIOpsPipeline()
-    return pipeline.ingest_data(topic=topic)
+    records = pipeline.ingest_data(topic=topic, timeout=10, max_records=10)
+    pipeline.close()
+    return records or []  # Ensure it returns a list
 
+@task(log_prints=True)
+def feature_engineering_task(raw_data: Dict[str, Any]) -> pd.DataFrame:
+    fe = FeatureEngineering()
+    return fe.create_deployment_features(raw_data=raw_data)
+
+@task(log_prints=True)
+def model_inference_task(raw_data: Dict[str, Any]) -> Dict[str, Any]:
+    logger = get_run_logger()
+    if not RF_MODEL_PATH.exists() or not SCALER_PATH.exists():
+        logger.error(f"Model files not found at {RF_MODEL_PATH} or {SCALER_PATH}")
+        raise FileNotFoundError("Required model files are missing.")
+    classifier = joblib.load(RF_MODEL_PATH)
+    scaler = joblib.load(SCALER_PATH)
+    inference = RealTimeInference(classifier, scaler)
+    return inference.predict_with_explanation(deployment_data=raw_data)
+
+@task(log_prints=True)
+def dashboard_task() -> Dict[str, Any]:
+    dashboard = AIOpsDashboard()
+    return dashboard.generate_dashboard_data()
+
+@task(log_prints=True)
+def cicd_task(prediction: Dict[str, Any], raw_data: Dict[str, Any]) -> Any:
+    cicd = CICDIntegration(prediction)
+    return cicd.jenkins_plugin(raw_data=raw_data)
+
+@task(log_prints=True)
+def ci_task(prediction: Dict[str, Any], raw_data: Dict[str, Any]) -> Any:
+    ci = ContinuousImprovement()
+    actual_outcome = raw_data.get('failure_label', False)
+    ci.collect_feedback(prediction, actual_outcome)
+    return ci.analyze_performance()
+
+# -----------------------------
+# Flow
+# -----------------------------
 
 @flow(name="Change Failure Prediction Pipeline", log_prints=True)
-def main_flow():
-    ingested = ingest_data_task(topic='deployment-metrics')
+def main_flow() -> Dict[str, Any]:
+    logger = get_run_logger()
 
-    if ingested is None:
+    # Step 1: Ingest data (list of records)
+    ingested_records = ingest_data_task(topic='deployment-metrics')
+
+    if not ingested_records:
+        logger.info("No new data")
         return {"status": "No new data"}
 
-    fe = FeatureEngineering()
-    features = fe.create_deployment_features(ingested['data'])
-    features_df = pd.DataFrame([features])
+    results = []
 
-    # Load trained model
-    classifier = joblib.load('models/rf_model.joblib')
-    inference = RealTimeInference(classifier, None)
-    prediction = inference.predict_with_explanation(ingested['data'])
+    for record in ingested_records:
+        try:
+            raw_data = record.get('data')
+            if not raw_data:
+                logger.warning("Skipping empty record")
+                continue
 
-    dashboard = AIOpsDashboard()
-    dashboard_data = dashboard.generate_dashboard_data()
+            logger.info(f"Processing deployment: {raw_data.get('deployment_id')}")
 
-    cicd = CICDIntegration(inference)
-    cicd_result = cicd.jenkins_plugin(ingested['data'])
+            # Step 2: Feature engineering
+            features_df = feature_engineering_task(raw_data=raw_data)
 
-    ci = ContinuousImprovement()
-    actual_outcome = ingested['data'].get('failure_label', random.choice([True, False]))  # Use label from dataset
-    ci.collect_feedback(prediction, actual_outcome)
-    performance = ci.analyze_performance()
+            # Step 3: Model inference
+            prediction = model_inference_task(raw_data=raw_data)
 
-    return {
-        'ingested_data': ingested,
-        'features': features,
-        'prediction': prediction,
-        'dashboard': dashboard_data,
-        'cicd': cicd_result,
-        'performance': performance
-    }
+            # Step 4: Dashboard generation
+            dashboard_data = dashboard_task()
 
+            # Step 5: CI/CD integration
+            cicd_result = cicd_task(prediction=prediction, raw_data=raw_data)
+
+            # Step 6: Continuous improvement
+            performance = ci_task(prediction=prediction, raw_data=raw_data)
+
+            results.append({
+                'raw_data': raw_data,
+                'features': features_df,
+                'prediction': prediction,
+                'dashboard': dashboard_data,
+                'cicd': cicd_result,
+                'performance': performance
+            })
+
+        except Exception as e:
+            logger.error(f"Error processing record: {e}")
+
+    logger.info(f"✅ Processed {len(results)} deployment(s)")
+    return {"results": results}
 
 if __name__ == "__main__":
     main_flow()

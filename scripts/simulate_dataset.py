@@ -1,13 +1,14 @@
 from confluent_kafka import Producer
 import json
-from datetime import datetime, timedelta
+from datetime import datetime
 import random
 import time
 
 producer_config = {'bootstrap.servers': 'localhost:29092'}
+producer = Producer(producer_config)
 
 def delivery_report(err, msg):
-    if err is not None:
+    if err:
         print(f"Message delivery failed: {err}")
     else:
         print(f"Message delivered to {msg.topic()} at offset {msg.offset()}")
@@ -43,17 +44,14 @@ def generate_dataset_record():
         'failure_label': failure_label
     }
 
-def produce_to_kafka(topic, data):
-    producer = Producer(producer_config)
-    producer.produce(topic, value=json.dumps(data), callback=delivery_report)
-    producer.flush()
-
 def simulate_dataset_stream(num_records=100, interval_seconds=2):
     for _ in range(num_records):
         record = generate_dataset_record()
-        produce_to_kafka('deployment-metrics', {'timestamp': record['timestamp'], 'data': record})
+        producer.produce('deployment-metrics', value=json.dumps(record), callback=delivery_report)
         print(f"Sent record: {record['deployment_id']} at {record['timestamp']}")
         time.sleep(interval_seconds)
+
+    producer.flush()  # flush once at the end
 
 if __name__ == "__main__":
     simulate_dataset_stream(num_records=100, interval_seconds=2)

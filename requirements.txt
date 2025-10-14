@@ -7,3 +7,6 @@ prometheus-client>=0.10
 requests>=2.25
 pytest>=7.0
 pip install -e .
+pip install "pydantic<2.0"
+pip install "griffe>=0.28,<1.0"
+
