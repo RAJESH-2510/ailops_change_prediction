@@ -1,0 +1,2193 @@
+[
+    {
+        "timestamp": "2025-10-23T12:48:03.080374",
+        "deployment_id": null,
+        "predicted_risk": 0.00593787457774872,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T12:48:05.611044",
+        "deployment_id": null,
+        "predicted_risk": 0.007541666666666666,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T12:48:08.106830",
+        "deployment_id": null,
+        "predicted_risk": 0.03487850201329071,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T12:48:10.608585",
+        "deployment_id": null,
+        "predicted_risk": 0.6058931332442429,
+        "actual_failure": 0,
+        "prediction_correct": false
+    },
+    {
+        "timestamp": "2025-10-23T12:48:13.003660",
+        "deployment_id": null,
+        "predicted_risk": 0.6007874188864875,
+        "actual_failure": 1,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T12:48:15.484268",
+        "deployment_id": null,
+        "predicted_risk": 0.06483813009858039,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T12:48:17.953557",
+        "deployment_id": null,
+        "predicted_risk": 0.007632367632367632,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T12:48:20.521170",
+        "deployment_id": null,
+        "predicted_risk": 0.007857200818883471,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T12:48:23.039728",
+        "deployment_id": null,
+        "predicted_risk": 0.012832611419853984,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T12:48:25.529925",
+        "deployment_id": null,
+        "predicted_risk": 0.004557386619961256,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T12:48:27.983810",
+        "deployment_id": null,
+        "predicted_risk": 0.7085953117523895,
+        "actual_failure": 0,
+        "prediction_correct": false
+    },
+    {
+        "timestamp": "2025-10-23T12:48:34.236549",
+        "deployment_id": null,
+        "predicted_risk": 0.6486249777183811,
+        "actual_failure": 0,
+        "prediction_correct": false
+    },
+    {
+        "timestamp": "2025-10-23T12:48:40.474425",
+        "deployment_id": null,
+        "predicted_risk": 0.0324110873665194,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T12:48:46.963255",
+        "deployment_id": null,
+        "predicted_risk": 0.6870885444492248,
+        "actual_failure": 1,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T12:48:53.060248",
+        "deployment_id": null,
+        "predicted_risk": 0.6364908919587478,
+        "actual_failure": 1,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T12:48:58.765932",
+        "deployment_id": null,
+        "predicted_risk": 0.6837160991301217,
+        "actual_failure": 0,
+        "prediction_correct": false
+    },
+    {
+        "timestamp": "2025-10-23T12:49:04.035330",
+        "deployment_id": null,
+        "predicted_risk": 0.7066488989571523,
+        "actual_failure": 0,
+        "prediction_correct": false
+    },
+    {
+        "timestamp": "2025-10-23T12:49:06.545942",
+        "deployment_id": null,
+        "predicted_risk": 0.038554779895590946,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T12:49:09.112889",
+        "deployment_id": null,
+        "predicted_risk": 0.023016548463356976,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T12:49:11.657954",
+        "deployment_id": null,
+        "predicted_risk": 0.027812091503267973,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T12:49:14.448204",
+        "deployment_id": null,
+        "predicted_risk": 0.7097814456355175,
+        "actual_failure": 0,
+        "prediction_correct": false
+    },
+    {
+        "timestamp": "2025-10-23T12:49:17.176538",
+        "deployment_id": null,
+        "predicted_risk": 0.006596491228070175,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T12:49:20.646493",
+        "deployment_id": null,
+        "predicted_risk": 0.020377358490566037,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T12:49:23.737262",
+        "deployment_id": null,
+        "predicted_risk": 0.05261240922252675,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T12:49:29.077219",
+        "deployment_id": null,
+        "predicted_risk": 0.03918211454903701,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T12:49:34.210282",
+        "deployment_id": null,
+        "predicted_risk": 0.007512994017848387,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T12:49:36.692210",
+        "deployment_id": null,
+        "predicted_risk": 0.0003773584905660377,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T12:49:39.143602",
+        "deployment_id": null,
+        "predicted_risk": 0.020850079744816584,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T12:49:42.231366",
+        "deployment_id": null,
+        "predicted_risk": 0.02187694077962201,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T12:49:45.316764",
+        "deployment_id": null,
+        "predicted_risk": 0.050658510087507116,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T12:49:48.816656",
+        "deployment_id": null,
+        "predicted_risk": 0.04260869565217391,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T12:49:52.135042",
+        "deployment_id": null,
+        "predicted_risk": 0.6663063556889101,
+        "actual_failure": 1,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T12:49:55.345465",
+        "deployment_id": null,
+        "predicted_risk": 0.031941276439982215,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T12:49:58.203726",
+        "deployment_id": null,
+        "predicted_risk": 0.023451617609512344,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T12:50:01.945540",
+        "deployment_id": null,
+        "predicted_risk": 0.020690002492126384,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T12:50:04.707323",
+        "deployment_id": null,
+        "predicted_risk": 0.017124952850353304,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T12:50:07.279259",
+        "deployment_id": null,
+        "predicted_risk": 0.5964474466660101,
+        "actual_failure": 0,
+        "prediction_correct": false
+    },
+    {
+        "timestamp": "2025-10-23T12:50:09.919940",
+        "deployment_id": null,
+        "predicted_risk": 0.4800626713037447,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T12:50:12.547460",
+        "deployment_id": null,
+        "predicted_risk": 0.007541666666666666,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T12:50:15.044431",
+        "deployment_id": null,
+        "predicted_risk": 0.02265062028047465,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T12:50:17.632139",
+        "deployment_id": null,
+        "predicted_risk": 0.005006535947712418,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T12:50:20.337935",
+        "deployment_id": null,
+        "predicted_risk": 0.009225295605149973,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T12:50:22.847084",
+        "deployment_id": null,
+        "predicted_risk": 0.6546071799298935,
+        "actual_failure": 1,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T12:50:25.334497",
+        "deployment_id": null,
+        "predicted_risk": 0.01574370709382151,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T12:50:27.935190",
+        "deployment_id": null,
+        "predicted_risk": 0.002936535162950257,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T12:50:33.758324",
+        "deployment_id": null,
+        "predicted_risk": 0.01575945825816404,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T12:50:39.849471",
+        "deployment_id": null,
+        "predicted_risk": 0.07193938416579926,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T12:50:46.266096",
+        "deployment_id": null,
+        "predicted_risk": 0.019952729279737152,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T12:50:49.642426",
+        "deployment_id": null,
+        "predicted_risk": 0.017228123818383307,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T12:50:52.283259",
+        "deployment_id": null,
+        "predicted_risk": 0.03529389492708968,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T12:56:35.961713",
+        "deployment_id": null,
+        "predicted_risk": 0.723215997476598,
+        "actual_failure": 1,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T12:56:38.380300",
+        "deployment_id": null,
+        "predicted_risk": 0.00882460596933448,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T12:56:40.760848",
+        "deployment_id": null,
+        "predicted_risk": 0.0378190010902226,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T12:56:43.165359",
+        "deployment_id": null,
+        "predicted_risk": 0.024402460236470268,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T12:56:45.606892",
+        "deployment_id": null,
+        "predicted_risk": 0.7321095667363151,
+        "actual_failure": 1,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T12:56:48.023876",
+        "deployment_id": null,
+        "predicted_risk": 0.6602914766502805,
+        "actual_failure": 0,
+        "prediction_correct": false
+    },
+    {
+        "timestamp": "2025-10-23T12:56:50.551737",
+        "deployment_id": null,
+        "predicted_risk": 0.030095441962878975,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T12:56:53.075573",
+        "deployment_id": null,
+        "predicted_risk": 0.04786322312018906,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T12:56:55.556579",
+        "deployment_id": null,
+        "predicted_risk": 0.6849058690474058,
+        "actual_failure": 1,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T12:56:58.081451",
+        "deployment_id": null,
+        "predicted_risk": 0.6232262971849195,
+        "actual_failure": 1,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T12:57:03.777512",
+        "deployment_id": null,
+        "predicted_risk": 0.6358682127178155,
+        "actual_failure": 1,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T12:57:09.794706",
+        "deployment_id": null,
+        "predicted_risk": 0.6226702530425131,
+        "actual_failure": 1,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T12:57:15.878463",
+        "deployment_id": null,
+        "predicted_risk": 0.027557106544340928,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T12:57:21.841054",
+        "deployment_id": null,
+        "predicted_risk": 0.055966766336672046,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T12:57:28.120784",
+        "deployment_id": null,
+        "predicted_risk": 0.0048640441683919945,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T12:57:34.185704",
+        "deployment_id": null,
+        "predicted_risk": 0.011462334766682592,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T12:57:39.224986",
+        "deployment_id": null,
+        "predicted_risk": 0.04624505928853754,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T12:57:44.750780",
+        "deployment_id": null,
+        "predicted_risk": 0.027263010467344834,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T12:57:50.478454",
+        "deployment_id": null,
+        "predicted_risk": 0.7567651610645609,
+        "actual_failure": 0,
+        "prediction_correct": false
+    },
+    {
+        "timestamp": "2025-10-23T12:57:55.790334",
+        "deployment_id": null,
+        "predicted_risk": 0.094218978671555,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T12:58:01.827785",
+        "deployment_id": null,
+        "predicted_risk": 0.013128309307665975,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T12:58:07.561288",
+        "deployment_id": null,
+        "predicted_risk": 0.06145258431503362,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T12:58:10.873537",
+        "deployment_id": null,
+        "predicted_risk": 0.050260035754091686,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T12:58:16.453444",
+        "deployment_id": null,
+        "predicted_risk": 0.012955808080808082,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T12:58:21.193524",
+        "deployment_id": null,
+        "predicted_risk": 0.0057314843934271565,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T12:58:27.216873",
+        "deployment_id": null,
+        "predicted_risk": 0.5972163535469625,
+        "actual_failure": 1,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T12:58:33.882722",
+        "deployment_id": null,
+        "predicted_risk": 0.03688803728147991,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T12:58:40.219331",
+        "deployment_id": null,
+        "predicted_risk": 0.7856938751223024,
+        "actual_failure": 1,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T12:58:46.125316",
+        "deployment_id": null,
+        "predicted_risk": 0.012624462434065242,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T12:58:51.925442",
+        "deployment_id": null,
+        "predicted_risk": 0.59487612205571,
+        "actual_failure": 1,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T12:58:58.452844",
+        "deployment_id": null,
+        "predicted_risk": 0.019822253464173344,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T12:59:04.980223",
+        "deployment_id": null,
+        "predicted_risk": 0.003053398058252427,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T12:59:10.903145",
+        "deployment_id": null,
+        "predicted_risk": 0.026466129350439186,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T12:59:17.625966",
+        "deployment_id": null,
+        "predicted_risk": 0.7354052596137408,
+        "actual_failure": 1,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T12:59:23.262320",
+        "deployment_id": null,
+        "predicted_risk": 0.748563585541794,
+        "actual_failure": 1,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T12:59:28.699829",
+        "deployment_id": null,
+        "predicted_risk": 0.014913189066836635,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T12:59:34.877573",
+        "deployment_id": null,
+        "predicted_risk": 0.011890399648968932,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T12:59:40.858662",
+        "deployment_id": null,
+        "predicted_risk": 0.7772319281719545,
+        "actual_failure": 0,
+        "prediction_correct": false
+    },
+    {
+        "timestamp": "2025-10-23T12:59:46.698887",
+        "deployment_id": null,
+        "predicted_risk": 0.7038142086988038,
+        "actual_failure": 1,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T12:59:52.839005",
+        "deployment_id": null,
+        "predicted_risk": 0.8118817898400699,
+        "actual_failure": 0,
+        "prediction_correct": false
+    },
+    {
+        "timestamp": "2025-10-23T12:59:58.439864",
+        "deployment_id": null,
+        "predicted_risk": 0.02879259775312407,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T13:00:04.114735",
+        "deployment_id": null,
+        "predicted_risk": 0.007378803861398798,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T13:00:09.852582",
+        "deployment_id": null,
+        "predicted_risk": 0.020053410553410554,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T13:00:15.770829",
+        "deployment_id": null,
+        "predicted_risk": 0.5837423499477903,
+        "actual_failure": 1,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T13:00:21.493300",
+        "deployment_id": null,
+        "predicted_risk": 0.6640374595962057,
+        "actual_failure": 1,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T13:00:27.071390",
+        "deployment_id": null,
+        "predicted_risk": 0.013345378008127113,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T13:00:32.845963",
+        "deployment_id": null,
+        "predicted_risk": 0.005149691050620353,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T13:00:38.661929",
+        "deployment_id": null,
+        "predicted_risk": 0.042133520074696534,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T13:00:42.822753",
+        "deployment_id": null,
+        "predicted_risk": 0.019333422333814618,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T13:00:45.366233",
+        "deployment_id": null,
+        "predicted_risk": 0.6292682603435936,
+        "actual_failure": 1,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T13:12:07.888099",
+        "deployment_id": null,
+        "predicted_risk": 0.0309104265532239,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T13:12:10.380422",
+        "deployment_id": null,
+        "predicted_risk": 0.012787162113284187,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T13:12:12.774421",
+        "deployment_id": null,
+        "predicted_risk": 0.05677257649337898,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T13:12:15.171234",
+        "deployment_id": null,
+        "predicted_risk": 0.04574804905239688,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T13:12:17.567388",
+        "deployment_id": null,
+        "predicted_risk": 0.06003213655005167,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T13:12:19.970351",
+        "deployment_id": null,
+        "predicted_risk": 0.006761314403234283,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T13:12:22.356865",
+        "deployment_id": null,
+        "predicted_risk": 0.005736886671088865,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T13:12:24.751625",
+        "deployment_id": null,
+        "predicted_risk": 0.039075344332310274,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T13:12:27.163362",
+        "deployment_id": null,
+        "predicted_risk": 0.02891395601302722,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T13:12:29.563986",
+        "deployment_id": null,
+        "predicted_risk": 0.01788874146149688,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T13:12:32.087952",
+        "deployment_id": null,
+        "predicted_risk": 0.003735216240070609,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T13:12:34.594301",
+        "deployment_id": null,
+        "predicted_risk": 0.05621429271914709,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T13:12:37.157416",
+        "deployment_id": null,
+        "predicted_risk": 0.06486188667108886,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T13:12:41.158877",
+        "deployment_id": null,
+        "predicted_risk": 0.05052510800079087,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T13:12:47.154838",
+        "deployment_id": null,
+        "predicted_risk": 0.020999148392591017,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T13:12:51.568152",
+        "deployment_id": null,
+        "predicted_risk": 0.015079787640363607,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T13:12:57.202620",
+        "deployment_id": null,
+        "predicted_risk": 0.0024561403508771926,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T13:13:03.119099",
+        "deployment_id": null,
+        "predicted_risk": 0.7576459719650314,
+        "actual_failure": 1,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T13:13:08.831462",
+        "deployment_id": null,
+        "predicted_risk": 0.02,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T13:13:14.799572",
+        "deployment_id": null,
+        "predicted_risk": 0.034698839490029415,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T13:13:20.819629",
+        "deployment_id": null,
+        "predicted_risk": 0.014099672257566996,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T13:13:26.990036",
+        "deployment_id": null,
+        "predicted_risk": 0.03629998875056641,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T13:13:33.209697",
+        "deployment_id": null,
+        "predicted_risk": 0.5793327017868701,
+        "actual_failure": 1,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T13:13:39.051309",
+        "deployment_id": null,
+        "predicted_risk": 0.01829615177183465,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T13:13:46.112366",
+        "deployment_id": null,
+        "predicted_risk": 0.021694740278714094,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T13:13:50.649981",
+        "deployment_id": null,
+        "predicted_risk": 0.03288439347030678,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T13:13:55.180084",
+        "deployment_id": null,
+        "predicted_risk": 0.6555468906470773,
+        "actual_failure": 1,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T13:14:01.389902",
+        "deployment_id": null,
+        "predicted_risk": 0.03369856540610902,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T13:14:04.726179",
+        "deployment_id": null,
+        "predicted_risk": 0.011880971880971883,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T13:14:07.195354",
+        "deployment_id": null,
+        "predicted_risk": 0.6634400924549193,
+        "actual_failure": 0,
+        "prediction_correct": false
+    },
+    {
+        "timestamp": "2025-10-23T13:14:09.720062",
+        "deployment_id": null,
+        "predicted_risk": 0.6001440362436761,
+        "actual_failure": 0,
+        "prediction_correct": false
+    },
+    {
+        "timestamp": "2025-10-23T13:14:12.199047",
+        "deployment_id": null,
+        "predicted_risk": 0.018043076901495064,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T13:14:14.753536",
+        "deployment_id": null,
+        "predicted_risk": 0.025612872401091193,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T13:14:17.477948",
+        "deployment_id": null,
+        "predicted_risk": 0.6157752317516355,
+        "actual_failure": 1,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T13:14:20.315932",
+        "deployment_id": null,
+        "predicted_risk": 0.0277256682894535,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T13:14:25.763427",
+        "deployment_id": null,
+        "predicted_risk": 0.01944477080893636,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T13:14:31.170582",
+        "deployment_id": null,
+        "predicted_risk": 0.022444828649163015,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T13:14:36.576551",
+        "deployment_id": null,
+        "predicted_risk": 0.6248386814098825,
+        "actual_failure": 0,
+        "prediction_correct": false
+    },
+    {
+        "timestamp": "2025-10-23T13:14:42.460949",
+        "deployment_id": null,
+        "predicted_risk": 0.01433772837891831,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T13:14:48.674010",
+        "deployment_id": null,
+        "predicted_risk": 0.019878787878787878,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T13:14:54.506102",
+        "deployment_id": null,
+        "predicted_risk": 0.014068248372596199,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T13:15:00.460892",
+        "deployment_id": null,
+        "predicted_risk": 0.009715755942171035,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T13:15:06.657470",
+        "deployment_id": null,
+        "predicted_risk": 0.05066348668493977,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T13:15:13.139718",
+        "deployment_id": null,
+        "predicted_risk": 0.01401497646555413,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T13:15:19.239031",
+        "deployment_id": null,
+        "predicted_risk": 0.5908644660224877,
+        "actual_failure": 0,
+        "prediction_correct": false
+    },
+    {
+        "timestamp": "2025-10-23T13:15:24.845995",
+        "deployment_id": null,
+        "predicted_risk": 0.7831481577822277,
+        "actual_failure": 1,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T13:15:30.773037",
+        "deployment_id": null,
+        "predicted_risk": 0.07673447918505685,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T13:15:36.599707",
+        "deployment_id": null,
+        "predicted_risk": 0.029819001090222598,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T13:15:42.719933",
+        "deployment_id": null,
+        "predicted_risk": 0.0065839867438801485,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T13:15:49.031230",
+        "deployment_id": null,
+        "predicted_risk": 0.012456815114709852,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T13:41:00.320205",
+        "deployment_id": null,
+        "predicted_risk": 0.6420538608298318,
+        "actual_failure": 1,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T13:41:09.652228",
+        "deployment_id": null,
+        "predicted_risk": 0.019483033060879715,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T13:41:19.299302",
+        "deployment_id": null,
+        "predicted_risk": 0.03202795306227801,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T13:41:29.253734",
+        "deployment_id": null,
+        "predicted_risk": 0.02311408788045502,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T13:41:38.403790",
+        "deployment_id": null,
+        "predicted_risk": 0.018083422333814617,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T13:41:47.401738",
+        "deployment_id": null,
+        "predicted_risk": 0.03684632735118172,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T13:41:57.044674",
+        "deployment_id": null,
+        "predicted_risk": 0.013375626566416039,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T13:42:06.338090",
+        "deployment_id": null,
+        "predicted_risk": 0.02504552520541861,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T13:42:15.496096",
+        "deployment_id": null,
+        "predicted_risk": 0.07004040404040404,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T13:42:24.559687",
+        "deployment_id": null,
+        "predicted_risk": 0.07050081956981828,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T13:42:33.639190",
+        "deployment_id": null,
+        "predicted_risk": 0.7823008387021956,
+        "actual_failure": 1,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T13:42:42.598568",
+        "deployment_id": null,
+        "predicted_risk": 0.02610281485397119,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T13:42:51.734847",
+        "deployment_id": null,
+        "predicted_risk": 0.62992632641287,
+        "actual_failure": 0,
+        "prediction_correct": false
+    },
+    {
+        "timestamp": "2025-10-23T13:43:00.965411",
+        "deployment_id": null,
+        "predicted_risk": 0.019461642640999303,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T13:43:10.405180",
+        "deployment_id": null,
+        "predicted_risk": 0.6814832128495952,
+        "actual_failure": 1,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T13:43:19.534147",
+        "deployment_id": null,
+        "predicted_risk": 0.03417720198640418,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T13:43:23.244057",
+        "deployment_id": null,
+        "predicted_risk": 0.013385478033659541,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T13:43:26.680909",
+        "deployment_id": null,
+        "predicted_risk": 0.053739376698057235,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T13:43:30.047800",
+        "deployment_id": null,
+        "predicted_risk": 0.06599900565885729,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T13:43:33.416374",
+        "deployment_id": null,
+        "predicted_risk": 0.01698920377867746,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T13:43:36.796330",
+        "deployment_id": null,
+        "predicted_risk": 0.016315013813719595,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T13:43:40.021762",
+        "deployment_id": null,
+        "predicted_risk": 0.06380174758422676,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T13:43:43.361344",
+        "deployment_id": null,
+        "predicted_risk": 0.017092685092685092,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T13:43:46.700853",
+        "deployment_id": null,
+        "predicted_risk": 0.008961038961038961,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T13:43:50.191287",
+        "deployment_id": null,
+        "predicted_risk": 0.75594748435589,
+        "actual_failure": 1,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T13:43:53.580386",
+        "deployment_id": null,
+        "predicted_risk": 0.030166666666666665,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T13:43:57.021069",
+        "deployment_id": null,
+        "predicted_risk": 0.031749956883448414,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T13:44:05.610860",
+        "deployment_id": null,
+        "predicted_risk": 0.6520669474046751,
+        "actual_failure": 0,
+        "prediction_correct": false
+    },
+    {
+        "timestamp": "2025-10-23T13:44:15.309272",
+        "deployment_id": null,
+        "predicted_risk": 0.04993693472812465,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T13:44:24.664558",
+        "deployment_id": null,
+        "predicted_risk": 0.02049882472523982,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T13:44:33.895074",
+        "deployment_id": null,
+        "predicted_risk": 0.011909086360966676,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T13:44:43.034624",
+        "deployment_id": null,
+        "predicted_risk": 0.031016547049441786,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T13:44:52.297632",
+        "deployment_id": null,
+        "predicted_risk": 0.06731270483902062,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T13:45:01.263849",
+        "deployment_id": null,
+        "predicted_risk": 0.0060793923058074,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T13:45:10.312536",
+        "deployment_id": null,
+        "predicted_risk": 0.7395213569619149,
+        "actual_failure": 1,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T13:45:19.575902",
+        "deployment_id": null,
+        "predicted_risk": 0.011373923342753693,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T13:45:28.646253",
+        "deployment_id": null,
+        "predicted_risk": 0.004128456735057984,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T13:45:37.958272",
+        "deployment_id": null,
+        "predicted_risk": 0.09411216586617044,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T13:45:47.195446",
+        "deployment_id": null,
+        "predicted_risk": 0.01633557088161518,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T13:45:56.505384",
+        "deployment_id": null,
+        "predicted_risk": 0.0775607158541941,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T13:46:05.811774",
+        "deployment_id": null,
+        "predicted_risk": 0.03444373050702141,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T13:46:15.119611",
+        "deployment_id": null,
+        "predicted_risk": 0.011938441695012313,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T13:46:24.506442",
+        "deployment_id": null,
+        "predicted_risk": 0.022765866223962573,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T13:46:33.987708",
+        "deployment_id": null,
+        "predicted_risk": 0.0204045885344429,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T13:46:43.234956",
+        "deployment_id": null,
+        "predicted_risk": 0.015527196189945296,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T13:46:52.613639",
+        "deployment_id": null,
+        "predicted_risk": 0.6408132577159233,
+        "actual_failure": 0,
+        "prediction_correct": false
+    },
+    {
+        "timestamp": "2025-10-23T13:47:01.870331",
+        "deployment_id": null,
+        "predicted_risk": 0.6557592218188606,
+        "actual_failure": 1,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T13:47:11.227094",
+        "deployment_id": null,
+        "predicted_risk": 0.7557203219017381,
+        "actual_failure": 1,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T13:47:20.397412",
+        "deployment_id": null,
+        "predicted_risk": 0.5995358142831925,
+        "actual_failure": 1,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T13:47:30.063301",
+        "deployment_id": null,
+        "predicted_risk": 0.00903378042722305,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T15:00:14.702974",
+        "deployment_id": null,
+        "predicted_risk": 0.5884345980483161,
+        "actual_failure": 1,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T15:00:23.097208",
+        "deployment_id": null,
+        "predicted_risk": 0.03575324675324675,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T15:00:32.006386",
+        "deployment_id": null,
+        "predicted_risk": 0.7851354647450458,
+        "actual_failure": 1,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T15:00:40.976212",
+        "deployment_id": null,
+        "predicted_risk": 0.024217023172455204,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T15:00:49.928068",
+        "deployment_id": null,
+        "predicted_risk": 0.005324675324675324,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T15:00:58.833673",
+        "deployment_id": null,
+        "predicted_risk": 0.03982422268806709,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T15:01:07.949932",
+        "deployment_id": null,
+        "predicted_risk": 0.014014843825779439,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T15:01:16.766579",
+        "deployment_id": null,
+        "predicted_risk": 0.009203463203463203,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T15:01:25.551531",
+        "deployment_id": null,
+        "predicted_risk": 0.03090343982934683,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T15:01:34.634714",
+        "deployment_id": null,
+        "predicted_risk": 0.07647852147852147,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T15:01:43.451102",
+        "deployment_id": null,
+        "predicted_risk": 0.5970938618153285,
+        "actual_failure": 1,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T15:01:52.592478",
+        "deployment_id": null,
+        "predicted_risk": 0.5893786741685934,
+        "actual_failure": 0,
+        "prediction_correct": false
+    },
+    {
+        "timestamp": "2025-10-23T15:02:01.679019",
+        "deployment_id": null,
+        "predicted_risk": 0.010776782381485628,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T15:04:51.604124",
+        "deployment_id": null,
+        "predicted_risk": 0.019550091807057753,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T15:05:00.952132",
+        "deployment_id": null,
+        "predicted_risk": 0.666560278828462,
+        "actual_failure": 1,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T15:05:10.300648",
+        "deployment_id": null,
+        "predicted_risk": 0.016044227404344934,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T15:05:15.119911",
+        "deployment_id": null,
+        "predicted_risk": 0.042256276283930166,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T15:05:18.635356",
+        "deployment_id": null,
+        "predicted_risk": 0.01998080499701723,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T15:05:22.030347",
+        "deployment_id": null,
+        "predicted_risk": 0.006069688559975331,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T15:05:25.442569",
+        "deployment_id": null,
+        "predicted_risk": 0.042333333333333334,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T15:05:28.829600",
+        "deployment_id": null,
+        "predicted_risk": 0.03632080200501253,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T15:05:32.140650",
+        "deployment_id": null,
+        "predicted_risk": 0.015660043053485676,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T15:05:35.566850",
+        "deployment_id": null,
+        "predicted_risk": 0.7243391174520762,
+        "actual_failure": 1,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T15:05:38.991602",
+        "deployment_id": null,
+        "predicted_risk": 0.7581150363083027,
+        "actual_failure": 1,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T15:05:42.265963",
+        "deployment_id": null,
+        "predicted_risk": 0.01388195568034009,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T15:05:45.660067",
+        "deployment_id": null,
+        "predicted_risk": 0.011818784845378344,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T15:05:54.409843",
+        "deployment_id": null,
+        "predicted_risk": 0.027776567976732048,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T15:06:03.287909",
+        "deployment_id": null,
+        "predicted_risk": 0.0069172932330827065,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T15:06:12.315696",
+        "deployment_id": null,
+        "predicted_risk": 0.024364087880455017,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T15:06:21.531012",
+        "deployment_id": null,
+        "predicted_risk": 0.02268665566354912,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T15:06:30.322934",
+        "deployment_id": null,
+        "predicted_risk": 0.02744642857142857,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T15:06:39.525358",
+        "deployment_id": null,
+        "predicted_risk": 0.027018660766814993,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T15:06:48.890699",
+        "deployment_id": null,
+        "predicted_risk": 0.03301241135485466,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T15:06:57.806644",
+        "deployment_id": null,
+        "predicted_risk": 0.012034077034077035,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T15:07:06.870086",
+        "deployment_id": null,
+        "predicted_risk": 0.02762427808652065,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T15:07:13.223157",
+        "deployment_id": null,
+        "predicted_risk": 0.019945742555860083,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T15:07:16.581003",
+        "deployment_id": null,
+        "predicted_risk": 0.6513669603783292,
+        "actual_failure": 0,
+        "prediction_correct": false
+    },
+    {
+        "timestamp": "2025-10-23T15:07:19.951809",
+        "deployment_id": null,
+        "predicted_risk": 0.019346358191808685,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T15:07:27.437611",
+        "deployment_id": null,
+        "predicted_risk": 0.03443640248982546,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T15:07:30.736347",
+        "deployment_id": null,
+        "predicted_risk": 0.03484969317342703,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T15:07:34.992588",
+        "deployment_id": null,
+        "predicted_risk": 0.015591680803959557,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T15:07:43.960868",
+        "deployment_id": null,
+        "predicted_risk": 0.012923202614379084,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T15:07:53.237418",
+        "deployment_id": null,
+        "predicted_risk": 0.7006783639076941,
+        "actual_failure": 1,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T15:08:02.258024",
+        "deployment_id": null,
+        "predicted_risk": 0.00823885918003565,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T15:08:11.299904",
+        "deployment_id": null,
+        "predicted_risk": 0.012901618939613753,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T15:08:20.413109",
+        "deployment_id": null,
+        "predicted_risk": 0.06389745196324143,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T15:08:29.866184",
+        "deployment_id": null,
+        "predicted_risk": 0.010127202063128836,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T15:08:37.247550",
+        "deployment_id": null,
+        "predicted_risk": 0.056934508822007374,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T15:08:40.446090",
+        "deployment_id": null,
+        "predicted_risk": 0.0193500417710944,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T15:08:43.731310",
+        "deployment_id": null,
+        "predicted_risk": 0.042993613747866206,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T15:08:47.013256",
+        "deployment_id": null,
+        "predicted_risk": 0.00664636639452062,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T15:08:50.178624",
+        "deployment_id": null,
+        "predicted_risk": 0.01744608102153113,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T15:08:53.564692",
+        "deployment_id": null,
+        "predicted_risk": 0.025388899808307826,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T15:08:58.493474",
+        "deployment_id": null,
+        "predicted_risk": 0.004325980392156863,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T15:09:07.700016",
+        "deployment_id": null,
+        "predicted_risk": 0.02687807338292775,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T15:09:17.158207",
+        "deployment_id": null,
+        "predicted_risk": 0.7870300799850531,
+        "actual_failure": 1,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T15:09:26.240746",
+        "deployment_id": null,
+        "predicted_risk": 0.050260035754091686,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T15:09:35.355074",
+        "deployment_id": null,
+        "predicted_risk": 0.05234639375800341,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T15:09:44.580755",
+        "deployment_id": null,
+        "predicted_risk": 0.002127659574468085,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T15:09:53.941764",
+        "deployment_id": null,
+        "predicted_risk": 0.04363691638441169,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T15:10:03.402492",
+        "deployment_id": null,
+        "predicted_risk": 0.7162842709550159,
+        "actual_failure": 1,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T15:10:12.660754",
+        "deployment_id": null,
+        "predicted_risk": 0.7868892454578221,
+        "actual_failure": 0,
+        "prediction_correct": false
+    },
+    {
+        "timestamp": "2025-10-23T15:10:21.824162",
+        "deployment_id": null,
+        "predicted_risk": 0.02128323262677665,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T15:40:01.490902",
+        "deployment_id": null,
+        "predicted_risk": 0.6545745932456363,
+        "actual_failure": 1,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T15:40:05.131917",
+        "deployment_id": null,
+        "predicted_risk": 0.014822368421052633,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T15:40:13.231521",
+        "deployment_id": null,
+        "predicted_risk": 0.7753022023761876,
+        "actual_failure": 1,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T15:40:22.504785",
+        "deployment_id": null,
+        "predicted_risk": 0.6989338758213308,
+        "actual_failure": 1,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T15:40:31.650002",
+        "deployment_id": null,
+        "predicted_risk": 0.0472656102478757,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T15:40:40.880379",
+        "deployment_id": null,
+        "predicted_risk": 0.01397379813169287,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T15:40:50.180362",
+        "deployment_id": null,
+        "predicted_risk": 0.03024351181908948,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T15:40:59.388142",
+        "deployment_id": null,
+        "predicted_risk": 0.6292976194904003,
+        "actual_failure": 1,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T15:41:08.508801",
+        "deployment_id": null,
+        "predicted_risk": 0.007035367148574695,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T15:41:17.543898",
+        "deployment_id": null,
+        "predicted_risk": 0.02583603678230449,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T15:41:26.476873",
+        "deployment_id": null,
+        "predicted_risk": 0.7311566616616907,
+        "actual_failure": 1,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T15:41:35.741033",
+        "deployment_id": null,
+        "predicted_risk": 0.011359006053159634,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T15:41:44.963653",
+        "deployment_id": null,
+        "predicted_risk": 0.007125244115530888,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T15:41:54.211586",
+        "deployment_id": null,
+        "predicted_risk": 0.01419852661957925,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T15:41:58.743149",
+        "deployment_id": null,
+        "predicted_risk": 0.008857456140350878,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T15:42:02.448354",
+        "deployment_id": null,
+        "predicted_risk": 0.05077670785713989,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T15:42:05.833146",
+        "deployment_id": null,
+        "predicted_risk": 0.01749742925924957,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T15:42:10.658675",
+        "deployment_id": null,
+        "predicted_risk": 0.012276782381485628,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T15:42:20.065396",
+        "deployment_id": null,
+        "predicted_risk": 0.020564463045596497,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T15:42:29.277330",
+        "deployment_id": null,
+        "predicted_risk": 0.05096856465637465,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T15:42:38.572452",
+        "deployment_id": null,
+        "predicted_risk": 0.01068038879359634,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T15:42:47.983980",
+        "deployment_id": null,
+        "predicted_risk": 0.014865684612738123,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T15:42:57.073586",
+        "deployment_id": null,
+        "predicted_risk": 0.7232141971606125,
+        "actual_failure": 1,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T15:43:06.350392",
+        "deployment_id": null,
+        "predicted_risk": 0.5378598821552676,
+        "actual_failure": 0,
+        "prediction_correct": false
+    },
+    {
+        "timestamp": "2025-10-23T15:43:15.872825",
+        "deployment_id": null,
+        "predicted_risk": 0.5868531800931782,
+        "actual_failure": 0,
+        "prediction_correct": false
+    },
+    {
+        "timestamp": "2025-10-23T15:43:24.996191",
+        "deployment_id": null,
+        "predicted_risk": 0.029164023637898294,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T15:43:34.438743",
+        "deployment_id": null,
+        "predicted_risk": 0.02790952675354704,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T15:43:43.620272",
+        "deployment_id": null,
+        "predicted_risk": 0.8060008559276416,
+        "actual_failure": 1,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T15:43:52.885976",
+        "deployment_id": null,
+        "predicted_risk": 0.06361756718800256,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T15:44:02.155865",
+        "deployment_id": null,
+        "predicted_risk": 0.5078962968552432,
+        "actual_failure": 1,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T15:44:11.439567",
+        "deployment_id": null,
+        "predicted_risk": 0.013314451212748204,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T15:44:20.797210",
+        "deployment_id": null,
+        "predicted_risk": 0.010828338882722898,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T15:44:25.559264",
+        "deployment_id": null,
+        "predicted_risk": 0.6234731627657686,
+        "actual_failure": 1,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T15:44:34.610653",
+        "deployment_id": null,
+        "predicted_risk": 0.023695906432748538,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T15:44:43.906222",
+        "deployment_id": null,
+        "predicted_risk": 0.046357319626879875,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T15:44:51.445293",
+        "deployment_id": null,
+        "predicted_risk": 0.015009387280489566,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T15:44:54.724211",
+        "deployment_id": null,
+        "predicted_risk": 0.016101457706160952,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T15:45:02.531713",
+        "deployment_id": null,
+        "predicted_risk": 0.6571497367952059,
+        "actual_failure": 1,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T15:45:11.760398",
+        "deployment_id": null,
+        "predicted_risk": 0.699599028302144,
+        "actual_failure": 1,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T15:45:21.494027",
+        "deployment_id": null,
+        "predicted_risk": 0.020801487341348023,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T15:45:30.476146",
+        "deployment_id": null,
+        "predicted_risk": 0.05564556809614576,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T15:45:39.488909",
+        "deployment_id": null,
+        "predicted_risk": 0.007266294520009434,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T15:45:49.331956",
+        "deployment_id": null,
+        "predicted_risk": 0.01575945825816404,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T15:45:58.630245",
+        "deployment_id": null,
+        "predicted_risk": 0.5149643134944101,
+        "actual_failure": 1,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T15:46:07.843556",
+        "deployment_id": null,
+        "predicted_risk": 0.048457828415537765,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T15:46:17.182975",
+        "deployment_id": null,
+        "predicted_risk": 0.03346466576901359,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T15:46:26.632537",
+        "deployment_id": null,
+        "predicted_risk": 0.024864044168391993,
+        "actual_failure": 0,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T15:46:35.905006",
+        "deployment_id": null,
+        "predicted_risk": 0.6651828747388057,
+        "actual_failure": 1,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T15:46:45.075420",
+        "deployment_id": null,
+        "predicted_risk": 0.7133927107426916,
+        "actual_failure": 1,
+        "prediction_correct": true
+    },
+    {
+        "timestamp": "2025-10-23T15:46:54.480015",
+        "deployment_id": null,
+        "predicted_risk": 0.009393954094477519,
+        "actual_failure": 0,
+        "prediction_correct": true
+    }
+]

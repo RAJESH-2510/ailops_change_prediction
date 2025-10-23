@@ -53,7 +53,7 @@ services:
     ports:
       - "9091:9091"
 
-  # -----------------------------
+    # -----------------------------
   # Grafana
   # -----------------------------
   grafana:
@@ -64,8 +64,16 @@ services:
     environment:
       - GF_SECURITY_ADMIN_USER=admin
       - GF_SECURITY_ADMIN_PASSWORD=admin
+      # Automatically install Diagram plugin
+      - GF_INSTALL_PLUGINS=jdbranham-diagram-panel
+      # Optional: Load dashboards automatically
+      - GF_PATHS_PROVISIONING=/etc/grafana/provisioning
     depends_on:
       - prometheus
+    volumes:
+      - /c/Users/basav/ailops_change_prediction/grafana/grafana.ini:/etc/grafana/grafana.ini
+      - /c/Users/basav/ailops_change_prediction/grafana/provisioning:/etc/grafana/provisioning
+      - /c/Users/basav/ailops_change_prediction/grafana/data:/var/lib/grafana
 
   # -----------------------------
   # Prefect Server

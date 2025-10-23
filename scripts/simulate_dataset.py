@@ -54,4 +54,4 @@ def simulate_dataset_stream(num_records=100, interval_seconds=2):
     producer.flush()  # flush once at the end
 
 if __name__ == "__main__":
-    simulate_dataset_stream(num_records=100, interval_seconds=2)
+    simulate_dataset_stream(num_records=300, interval_seconds=2)

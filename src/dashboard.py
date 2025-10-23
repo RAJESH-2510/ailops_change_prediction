@@ -1,67 +1,91 @@
 from prometheus_client import Gauge, CollectorRegistry, push_to_gateway
 
+
 class AIOpsDashboard:
-    def __init__(self, pushgateway_url='http://localhost:9091'):
+    def __init__(self, pushgateway_url='http://localhost:9091', env='prod', service='all'):
         self.pushgateway_url = pushgateway_url
+        self.env = env
+        self.service = service
         self.metrics_registry = CollectorRegistry()
 
-    def generate_dashboard_data(
-        self,
-        real_time_metrics,
-        historical_trends=None,
-        model_performance=None,
-        top_risk_factors=None
-    ):
+    def generate_dashboard_data(self, real_time_metrics):
         """
-        Generates dashboard data and pushes metrics to Prometheus Pushgateway.
-
-        real_time_metrics: dict with keys:
-            - current_risk_score (float)
-            - active_deployments (int)
-            - predictions_last_hour (int)
-            - prevented_failures (int)
-            - system_health ('GOOD', 'WARNING', 'CRITICAL')
+        Pushes the provided real_time_metrics to Prometheus Pushgateway.
+        Expected structure:
+            - change_failure_rate_change_percentage
+            - model_accuracy_percentage
+            - estimated_annual_savings_usd
+            - prevented_incidents_total
+            - mttr_reduction_percentage
+            - ml_pipeline_status
+            - active_deployments_count
+            - average_risk_score_percentage
+            - current_test_coverage_percentage
+            - build_success_rate_percentage
+            - current_overall_risk_score
+            - overall_risk_score
+            - your_deployment_metric: dict of custom submetrics
         """
         if not isinstance(real_time_metrics, dict):
             raise ValueError("real_time_metrics must be a dictionary")
 
-        data = {
-            'real_time_metrics': real_time_metrics,
-            'historical_trends': historical_trends or {},
-            'model_performance': model_performance or {},
-            'top_risk_factors': top_risk_factors or []
-        }
-
         try:
-            self._push_metrics(data)
+            self._push_metrics(real_time_metrics)
         except Exception as e:
             print(f"[Warning] Failed to push metrics: {e}")
 
-        return data
+        return real_time_metrics
 
-    def _push_metrics(self, data):
+    def _push_metrics(self, metrics):
         self.metrics_registry = CollectorRegistry()  # Reset registry
+        labels = {'env': self.env, 'service': self.service}
 
-        metrics = data['real_time_metrics']
+        def push_metric(name, description, value, labelnames, labelvalues):
+            Gauge(
+                name,
+                description,
+                labelnames=labelnames,
+                registry=self.metrics_registry
+            ).labels(*labelvalues).set(float(value))
 
-        Gauge('current_risk_score', 'Deployment Risk Score', registry=self.metrics_registry).set(
-            float(metrics.get('current_risk_score', 0))
-        )
-        Gauge('active_deployments', 'Number of Active Deployments', registry=self.metrics_registry).set(
-            int(metrics.get('active_deployments', 0))
-        )
-        Gauge('predictions_last_hour', 'Predictions in the Last Hour', registry=self.metrics_registry).set(
-            int(metrics.get('predictions_last_hour', 0))
-        )
-        Gauge('prevented_failures', 'Prevented Failures', registry=self.metrics_registry).set(
-            int(metrics.get('prevented_failures', 0))
-        )
+        # Define known metric mappings
+        metric_map = {
+            'change_failure_rate_change_percentage': 'Change Failure Rate Improvement (%)',
+            'model_accuracy_percentage': 'Model Accuracy (%)',
+            'estimated_annual_savings_usd': 'Estimated Annual Savings (USD)',
+            'prevented_incidents_total': 'Total Prevented Incidents',
+            'mttr_reduction_percentage': 'MTTR Reduction (%)',
+            'ml_pipeline_status': 'ML Pipeline Status (1=Active, 0=Inactive)',
+            'active_deployments_count': 'Active Deployments Count',
+            'average_risk_score_percentage': 'Average Risk Score (%)',
+            'current_test_coverage_percentage': 'Current Test Coverage (%)',
+            'build_success_rate_percentage': 'Build Success Rate (%)',
+            'current_overall_risk_score': 'Current Overall Risk Score',
+            'overall_risk_score': 'Overall Risk Score',
+        }
 
-        system_health_map = {'GOOD': 0, 'WARNING': 1, 'CRITICAL': 2}
-        Gauge('system_health', 'System Health Status', registry=self.metrics_registry).set(
-            system_health_map.get(str(metrics.get('system_health', 'GOOD')).upper(), 0)
-        )
+        # Push all known metrics
+        for key, description in metric_map.items():
+            if key in metrics:
+                push_metric(
+                    key,
+                    description,
+                    metrics[key],
+                    ['env', 'service'],
+                    [self.env, self.service]
+                )
 
-        # Push to Prometheus Pushgateway
+        # Push nested custom metric(s) if present
+        if 'your_deployment_metric' in metrics and isinstance(metrics['your_deployment_metric'], dict):
+            gauge = Gauge(
+                'your_deployment_metric',
+                'Custom Deployment Metric',
+                labelnames=['env', 'service', 'metric'],
+                registry=self.metrics_registry
+            )
+            for sub_key, value in metrics['your_deployment_metric'].items():
+                gauge.labels(env=self.env, service=self.service, metric=sub_key).set(float(value))
+
+        # Push all to Pushgateway
         push_to_gateway(self.pushgateway_url, job='aiops_pipeline', registry=self.metrics_registry)
         print("[Info] Metrics successfully pushed to Pushgateway.")
